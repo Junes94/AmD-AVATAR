@@ -1,0 +1,30 @@
+paths:
+  index: data/index.csv
+  coordinates: data/coordinates
+  results: results
+
+keypoints: [nose, head, tail_base, torso, right_forelimb, left_forelimb, right_hindlimb, left_hindlimb, tail]
+
+kinematics:
+  fps: 20
+  smoothing_window: 5
+
+normalization:
+  body_size_quantile: 0.995
+
+posture_states:
+  reference_group: WT_early
+  height_kde_bandwidth: 0.4
+  height_kde_max_frames: 40000
+  height_kde_seed: 0
+
+statistics:
+  n_bootstrap: 2000
+  bootstrap_seed: 20240730
+  n_permutations: 10000
+  permutation_seed: 42
+
+representative_frames:
+  group: WT_early
+  states: [long_high, short_low]
+  n_per_state: 5

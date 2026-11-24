@@ -1,0 +1,5 @@
+# Versions used for the analyses of the paper (Python 3.13.7, Windows 11).
+numpy==2.4.6
+pandas==2.3.3
+scipy==1.17.1
+PyYAML==6.0.2
